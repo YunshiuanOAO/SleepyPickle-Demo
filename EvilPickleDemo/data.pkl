@@ -1,0 +1,15 @@
+(dp0
+Vname
+p1
+VAlice
+p2
+sVage
+p3
+I30
+sVscores
+p4
+(lp5
+I88
+aI92
+aI95
+as.
